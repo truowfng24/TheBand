@@ -112,3 +112,59 @@ html {
 #text .title {
   padding: 20px 0;
 }
+
+/* content */
+#content {
+  margin: 0 74px;
+  padding: 64px 16px;
+}
+
+#content .text-section {
+  text-align: center;
+}
+
+#content .text-section .heading-section {
+  font-size: 30px;
+  margin: 10px 0;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+#content .text-section .sub-heading-section {
+  font-size: 15px;
+  margin: 15px 0;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+#content .about-section {
+  margin: 15px 0;
+  font-size: 15px;
+  text-align: justify;
+}
+
+#content .list-agent {
+  padding: 32px 0;
+}
+
+#content .item-agent {
+  text-align: center;
+  float: left;
+  width: calc(100% / 3);
+}
+
+#content .name-agent {
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+#content .img-agent {
+  width: auto;
+  height: 200px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+#content .clear {
+  clear: both;
+}
