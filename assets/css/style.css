@@ -11,36 +11,35 @@ html {
 
 /* header */
 #header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 46px;
   background-color: #000;
+  height: 46px;
+  position: fixed;
   z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
+/* navigation */
 #nav {
   display: inline-block;
 }
 
 #nav li {
+  display: inline-block;
   position: relative;
 }
 
-#nav > li {
-  display: inline-block;
-}
-
 #nav li a {
-  color: #fff;
   text-decoration: none;
+  color: #fff;
   line-height: 46px;
 }
 
 #nav > li > a {
   text-transform: uppercase;
-  padding: 14.2px 24px;
+  display: inline-block;
+  padding: 0 24px;
 }
 
 #nav .subnav li:hover a,
@@ -57,11 +56,12 @@ html {
 }
 
 #nav .subnav li {
-  list-style-type: none;
+  display: block;
 }
 
 #nav .subnav a {
-  display: block;
+  width: 100%;
+  display: inline-block;
   padding: 0 16px;
 }
 
@@ -74,14 +74,17 @@ html {
   color: #fff;
 }
 
+/* search */
 #search {
   float: right;
 }
 
-#search .header-search {
-  color: #fff;
-  padding: 0 24px;
+#search .heading-search {
+  display: block;
   line-height: 46px;
+  color: #fff;
+  font-size: 15px;
+  padding: 0 24px;
 }
 
 #search:hover {
@@ -91,80 +94,86 @@ html {
 
 /* slider */
 #slider {
-  position: relative;
-  margin-top: 46px;
-  padding-top: 50%;
   background: url(/assets/img/slider/slider1.jpg) top center / cover no-repeat;
+  padding-top: 50%;
+  margin-top: 46px;
+  position: relative;
 }
 
-#text {
+#slider .text {
+  bottom: 0;
+  padding: 32px 16px;
+  text-align: center;
+  color: #fff;
   position: absolute;
-  bottom: 25px;
   width: 100%;
 }
 
-#text .title,
-#text .decreption {
-  color: #fff;
-  text-align: center;
+#slider .title {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 500;
 }
 
-#text .title {
-  padding: 20px 0;
+#slider .decreption {
+  margin: 15px 0;
+  font-weight: bolder;
+  font-size: 15px;
 }
 
 /* content */
-#content {
-  margin: 0 74px;
+/* about */
+#about {
+  margin: 0 16%;
   padding: 64px 16px;
 }
 
-#content .text-section {
+#about .title,
+#about .decreption {
   text-align: center;
 }
 
-#content .text-section .heading-section {
-  font-size: 30px;
+#about .title {
   margin: 10px 0;
   font-weight: 500;
   letter-spacing: 4px;
+  font-size: 30px;
 }
 
-#content .text-section .sub-heading-section {
-  font-size: 15px;
+#about .decreption {
   margin: 15px 0;
-  opacity: 0.6;
   font-style: italic;
+  opacity: 0.6;
 }
 
-#content .about-section {
-  margin: 15px 0;
+#about .summary {
   font-size: 15px;
+  margin: 15px 0;
   text-align: justify;
+  line-height: 1.4;
 }
 
-#content .list-agent {
+#about .list-item {
   padding: 32px 0;
 }
 
-#content .item-agent {
-  text-align: center;
+#about .agent {
   float: left;
-  width: calc(100% / 3);
+  text-align: center;
+  width: 33.33333%;
 }
 
-#content .name-agent {
-  margin: 15px 0;
+#about .name {
   font-size: 15px;
+  margin: 15px 0;
 }
 
-#content .img-agent {
-  width: auto;
-  height: 200px;
-  margin-bottom: 16px;
+#about .image {
+  height: 154px;
   border-radius: 4px;
+  margin-bottom: 16px;
 }
 
-#content .clear {
+#about .clear {
   clear: both;
 }
