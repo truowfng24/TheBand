@@ -123,16 +123,20 @@ html {
 
 /* content */
 /* about */
-#about {
+#about,
+#tour .tickets {
   margin: 0 16%;
   padding: 64px 16px;
 }
 
 #about .title,
-#about .decreption {
+#about .decreption,
+#tour .title,
+#tour .decreption {
   text-align: center;
 }
 
+#tour .title,
 #about .title {
   margin: 10px 0;
   font-weight: 500;
@@ -140,6 +144,7 @@ html {
   font-size: 30px;
 }
 
+#tour .decreption,
 #about .decreption {
   margin: 15px 0;
   font-style: italic;
@@ -176,4 +181,40 @@ html {
 
 #about .clear {
   clear: both;
+}
+
+/* tour */
+#tour {
+  background-color: #000;
+  color: #fff;
+}
+
+#tour .list-tickets {
+  background-color: #fff;
+  color: #757575;
+  list-style-type: none;
+  border: 1px solid #ccc;
+}
+
+#tour .list-tickets li {
+  font-size: 15px;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 16px;
+}
+
+#tour .sold-out {
+  text-align: center;
+  color: #fff;
+  background-color: #f44336;
+  margin-left: 16px;
+  padding: 0 8px;
+}
+
+#tour .quality {
+  float: right;
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  padding: 0 8px;
+  text-align: center;
 }
